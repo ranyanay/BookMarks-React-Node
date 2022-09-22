@@ -5,17 +5,8 @@ const mongoose = require('mongoose') // import mongoose
 
 const db_connected = "mongodb+srv://ranyanay:161196@cars.mddnvbz.mongodb.net/?retryWrites=true&w=majority"
 
-// app.set('view engine', 'ejs')
-
 const userRoutes = require('./routes/user') //import router
 app.use('/', userRoutes) //use this router with the '/' prefix
-
-//checking if the connection is ok
-
-// app.get('/' ,(req, res)=>{
-//     res.json({hi: ["hi"]})
-// })
-//check if need to change <---------------------
 
 const checkIfError = (error) => {
     if (error){
